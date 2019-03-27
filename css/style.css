@@ -191,13 +191,6 @@ button:focus,
     margin: 80px 0 80px 0;
 }
 
-hr {
-    background-color: #f1eee9;
-    width: 70px;
-    height: 3px;
-    margin: 0 auto;
-}
-
 .subscribe-title {
     font-family: Raleway-SemiBold;
     color: #555555;
@@ -216,12 +209,16 @@ hr {
     margin-top: 20px;
 }
 
-.subscribe-title:hover {
+.sprite-wrapper:hover .subscribe-title {
     font-family: Raleway-SemiBold;
     color: #c7b299;
     font-size: 22px;
     font-weight: 600;
     text-align: center;
+}
+
+.sprite-wrapper:hover {
+    cursor: pointer;
 }
 
 icon {
@@ -254,6 +251,27 @@ icon {
     padding: 30px;
 }
 
+.sprite-wrapper:after {
+    content: "";
+    display: block;
+    background-color: #f1eee9;
+    width: 70px;
+    height: 3px;
+    margin: 0 auto;
+    align-self: flex-end;
+}
+
+.sprite-wrapper:hover:after {
+    content: "";
+    display: block;
+    background-color: #c7b299;
+    ;
+    width: 70px;
+    height: 3px;
+    margin: 0 auto;
+    align-self: flex-end;
+}
+
 .realization {
     background-color: #fbfaf8;
 }
@@ -281,7 +299,8 @@ icon {
     height: 482px;
     background-image: url(../img/browser-center.jpg), url(../img/browser-left.jpg), url(../img/browser-right.jpg);
     background-repeat: no-repeat;
-    background-position: top right 220px, bottom left, bottom right;
+    background-position: bottom right 200px, bottom left, bottom right;
+    background-size: 700px;
 }
 
 .purchase {
@@ -476,4 +495,138 @@ icon {
     font-weight: 300;
     line-height: 20px;
     text-align: left;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.img-wrapper:hover:before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 27px;
+    background-image: url(../img/link.png);
+    position: absolute;
+    top: 106px;
+    left: 114px;
+    right: 0;
+    bottom: 0;
+}
+
+.img-wrapper:hover:after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 26px;
+    background-image: url(../img/lupa.png);
+    position: absolute;
+    top: 106px;
+    left: 198px;
+    right: 0;
+    bottom: 0;
+}
+
+.video {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.waxom-video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.video-txt {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 400px;
+    top: 300px;
+    width: 552px;
+    text-align: center;
+}
+
+.video-button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: block;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.video-button:before {
+    content: "";
+    border: 15px solid transparent;
+    border-left: 15px solid white;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
+.video-title {
+    font-family: Raleway-Medium;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.video-txt p {
+    font-family: Montserrat-Light;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+}
+
+.mobile {
+    background-color: #fbfaf8;
+    height: 695px;
+}
+
+.phone {
+    float: left;
+    margin-top: 80px;
+}
+
+.mobile-wrapper {
+    padding: 80px;
+}
+
+.mobile-title {
+    font-family: Raleway-SemiBold;
+    color: #555555;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.mobile-txt {
+    font-family: Montserrat-Light;
+    color: #8c8c8c;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.mobile-list {
+  
+}
+
+.mobile-list li {
+    font-family: Montserrat;
+    color: #8c8c8c;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: left;
+    margin-left: 20px;
 }
