@@ -41,6 +41,8 @@
 html,
 body {
     height: 100%;
+    width: 1920px;
+    margin: 0 auto;
 }
 
 .main-header {
@@ -62,7 +64,7 @@ body {
 }
 
 .header-title {
-    font-family: Raleway;
+    font-family: Raleway-Regular;
     color: #ffffff;
     font-size: 34px;
     font-weight: 400;
@@ -1054,6 +1056,19 @@ button:focus,
     padding: 77px 0 48px 0;
 }
 
+.footer-logo {
+    float: left;
+}
+
+.footer-title {
+    font-family: Raleway-Regular;
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 400;
+    text-align: right;
+    display: block;
+}
+
 .main-footer {
     background-color: #191919;
 }
@@ -1081,6 +1096,10 @@ button:focus,
 .fours-col {
     width: 300px;
     margin-right: 42px;
+}
+
+.first-col a {
+    text-decoration: none;
 }
 
 .sec-col .footer-txt-light:after,
@@ -1213,6 +1232,7 @@ button:focus,
 .sec-footer {
     background-color: #111111;
     height: 111px;
+    width: 100%;
 }
 
 .footer-copy {
@@ -1307,10 +1327,13 @@ button:focus,
 
 @media screen and (max-width: 575.98px) {
     .body {
-        width: 575px;
+        width: 100%;
     }
     .main-header {
         height: 200px;
+        width: 574px;
+        margin-left: 0;
+        margin-right: 0;
     }
     .col-md-3 {
         width: 200px;
@@ -1338,6 +1361,9 @@ button:focus,
     .subscribe {
         flex-wrap: wrap;
         padding-left: 70px;
+        width: 575px;
+        margin-right: 0;
+        margin-left: 0;
     }
     .sprite-wrapper {
         width: 180px;
@@ -1349,6 +1375,7 @@ button:focus,
     .purchase {
         visibility: hidden;
         height: 0;
+        margin-right: 0;
     }
     .img-block1 {
         visibility: hidden;
@@ -1357,6 +1384,7 @@ button:focus,
         visibility: hidden;
     }
     .projects {
+        width: 575px;
         height: 400px;
        
     }
@@ -1375,17 +1403,18 @@ button:focus,
     .video {
         width: 300px;
         height: 100px;
-
+        margin-left: 0;
+        margin-right: 0;
     }
     .waxom-video {
-        width: 400px;
+        width: 575px;
         height: 300px;
     }
     .video-txt {
         visibility: hidden;
     }
     .mobile {
-        width: 500px;
+        width: 575px;
         margin-top: 400px;
     }
     .phone {
@@ -1399,6 +1428,11 @@ button:focus,
         visibility: hidden;
         height: 0;
     }
+    
+    .post {
+        width: 575px;
+    }
+    
     .post-txt-wrapper {
         width: 300px;
         margin: 0 auto;
@@ -1410,6 +1444,7 @@ button:focus,
     
     .logos {
         height: 139px;
+        width: 575px;
     }
     
     .logos-wrapper {
@@ -1423,6 +1458,10 @@ button:focus,
         margin-right: 10px;
     }
     
+    .main-footer {
+        width: 575px;
+    }
+    
     .main-footer .container:first-child {
         height: 0;
     }
@@ -1434,6 +1473,7 @@ button:focus,
     
     .sec-footer {
         height: 150px;
+        width: 575px;
     }
     
     .sec-footer .container {
