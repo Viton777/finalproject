@@ -1334,10 +1334,21 @@ button:focus,
         width: 574px;
         margin-left: 0;
         margin-right: 0;
+        background-size: cover;
     }
     .col-md-3 {
         width: 200px;
     }
+    
+    .row {
+        width: 574px;
+        margin: 0;
+    }
+    
+    .main-header-wrapper {
+        width: 574px;
+    }
+    
     .col-md-9 .main-header-nav {
         display: flex;
         flex-direction: column;
@@ -1350,13 +1361,16 @@ button:focus,
     }
     .header-text {
         visibility: hidden;
+        width: 0;
     }
     .header-button,
     .img-button, .control {
         visibility: hidden;
     }
     .container {
-        width: 100%;
+        width: 574px;
+        margin: 0;
+        padding: 0;
     }
     .subscribe {
         flex-wrap: wrap;
@@ -1430,7 +1444,7 @@ button:focus,
     }
     
     .post {
-        width: 575px;
+        width: 574px;
     }
     
     .post-txt-wrapper {
@@ -1444,7 +1458,7 @@ button:focus,
     
     .logos {
         height: 139px;
-        width: 575px;
+        width: 574px;
     }
     
     .logos-wrapper {
